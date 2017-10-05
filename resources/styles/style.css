@@ -135,7 +135,7 @@ nav ul{
   list-style: none;
 }
 
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
   body{
     font-size: 16px
   }
@@ -149,13 +149,45 @@ nav ul{
     text-align: center;
   }
 
-  .product{
+  .item{
     width: 47%;
   }
 
-  .product .glasses {
+  .product.glasses {
     display: none;
   }
 
+}
+
+
+@media only screen and (max-width: 470px){
+  body{
+    font-size: 16px
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .mobileNav{
+    display: block;
+    text-align: center;
+  }
+
+  .item{
+    width: 90%;
+  }
+
+  .product.watch{
+    display: none;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .business-info{
+    flex-wrap: wrap;
+  }
 
 }
